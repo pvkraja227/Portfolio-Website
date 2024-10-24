@@ -61,7 +61,7 @@ CMD ["npm", "run", "start"]
 docker build -t app:3 -f Dockerfile1 .
 docker images (size: 598 MB)
 
-4. Dockerfile2 (using node serve)
+4. Dockerfile2 (using node serve - multi stage)
 
 From node:alpine AS build
 WORKDIR /app
@@ -80,7 +80,7 @@ CMD ["serve", "-s", "build", "-l", "3000"]
 docker build -t app:node -f Dockerfile2 .
 docker images (size: 183 MB)
 
-5. Dockerfile
+5. Dockerfile (using nginx - multi stage)
 
 docker build -t app:nginx .
 docker images (size: 59 MB)
