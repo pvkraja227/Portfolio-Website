@@ -14,3 +14,16 @@ install docker - 2 steps
 sudo usermod -aG docker ubuntu (adding ubuntu user to docker group)
 newgrp docker (apply changes)
 git clone https://github.com/pvkraja227/Portfolio-Website.git
+
+1. Dockerfile
+
+From node:latest
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+copy . .
+RUN npm run build
+EXPOSE 3000
+CMD ["npm", "run", "start"]
+
+docker run -itd -p 3000:3000
