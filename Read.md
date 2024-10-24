@@ -26,4 +26,4 @@ RUN npm run build
 EXPOSE 3000
 CMD ["npm", "run", "start"]
 
-docker run -itd -p 3000:3000
+docker build -t app:1 -f Dockerfile1
