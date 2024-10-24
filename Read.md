@@ -81,3 +81,9 @@ docker build -t app:node -f Dockerfile2 .
 docker images (size: 183 MB)
 
 5. Dockerfile
+
+docker build -t app:nginx .
+docker images (size: 59 MB)
+docker run -itd -p 80:80 app:nginx
+docker ps
+chrome: publicIP:80
