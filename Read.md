@@ -77,5 +77,7 @@ RUN npm install -g serve
 EXPOSE 3000
 CMD ["serve", "-s", "build", "-l", "3000"]
 
-docker build -t app:node .
-docker images (size: )
+docker build -t app:node -f Dockerfile2 .
+docker images (size: 183 MB)
+
+5. Dockerfile
