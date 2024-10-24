@@ -20,3 +20,6 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Copy the built React app from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
