@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=gjwVe0pu0ak&t=458s
+Reducing Docker Image Size from 1.5GB To 50MB | Docker | DevOps
 
 Docker image can be reduced in 4 stages
 
