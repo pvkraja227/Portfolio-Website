@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=gjwVe0pu0ak&t=458s
+
 Docker image can be reduced in 4 stages
 
 1. modifying dependencies
